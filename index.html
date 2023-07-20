@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Marker</title>
+    <link rel="shortcut icon" href="./5801789.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Black+Ops+One&family=Brawler:wght@400;700&family=Calligraffitti&family=Carter+One&family=DM+Serif+Display&family=Dancing+Script:wght@600&family=Lobster&family=Lobster+Two:wght@400;700&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;600;700;800;900;1000&family=Righteous&family=Rubik+Dirt&family=Sail&family=Suranna&family=Trade+Winds&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <script src="js/aos.js"></script>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <script>
+    AOS.init();
+    </script>
+
+
+<div id="total" class="min-vh-100 m-auto">
+    <div id="header" class=" py-3 overflow-hidden">
+        <h1 class=" display-3 text-center main fw-bold" style="font-family: sail;">Book Marker</h1><br>
+        <div class=" text-center">--------------------------------------------------------------------------------------------------------------------------------------</div><br>
+        <h2 class=" d-flex align-items-center justify-content-center fav">
+            <span><i class="fa-solid fa-bookmark"></i></span>
+            <div class="mx-3 fs-4 fw-bold"> Bookmark your favorite sites </div>
+            <span><i class="fa-solid fa-bookmark"></i></span>
+        </h2>
+<br>
+        <div class="total-input d-flex flex-column justify-content-center">
+
+            <div class="container">
+            <label for="siteName" class=" my-2 fs-6 fw-bold"><i class="fa-solid fa-book"></i> Site Name</label>
+            <input type="text" placeholder="Bookmark Name" class="form-control" id="siteName">
+<br>
+
+
+            <label for="siteURL" class=" my-2 fs-6 fw-bold"><i class="fa-solid fa-link"></i> Site URL</label>
+            <input type="text" placeholder="Bookmark URL" class="form-control" id="siteUrl">
+<br>
+            <button class="px-5 py-1 m-auto d-block fs-5 text-white" type="submit" onclick="addProduct()" id="submitBtn">Submit</button>
+            <button class="px-5 py-1 m-auto d-block fs-5 text-white bg-info d-none" id="updateBtn">Update</button>
+<br>
+<div class="text-center">--------------------------------------------------------------------------------------------------------------------------------</div><br>
+        </div>
+        </div>
+    </div>
+    <div class="text-center">
+<label for="inputSearch" class="text-center my-3">
+<input type="search" id="inputSearch" class="m-auto form-control" placeholder="Search" oninput="searchFun()">
+</label>
+</div>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr class="text-center">
+                <th>Index:</th>
+                <th style="white-space: nowrap;">Website Name:</th>
+                <th>Visit:</th>
+                <th>Delete:</th>
+                <th>Update:</th>
+            </tr>
+        </thead>
+        <tbody id="table" class="text-center">
+
+        </tbody>
+    </table>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./js/bootstrap.bundle.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

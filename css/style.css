@@ -1,0 +1,41 @@
+* {
+  color: black;
+}
+
+body {
+  background-color: rgb(197, 178, 178);
+}
+
+#total {
+  background-color: #f7ecde;
+  width: 100%;
+}
+
+.main {
+  padding: 10px;
+}
+
+.fav {
+  background: linear-gradient(180deg, green, yellow);
+  width: fit-content;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #ee4d21;
+  border: 0;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: #c42c02;
+}
+i{
+  transition: .2s;
+}
+
+.fav:hover i {
+  color: blue;
+}
